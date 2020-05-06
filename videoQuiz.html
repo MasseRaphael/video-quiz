@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Vidéos Quiz</title>
+        <link rel='stylesheet' href='style.css'>
+        </head>
+    <body>
+
+        <div id="interface">
+            <div id="questionPlayer">
+                <div id="initiate">
+                    <button onclick="start()">Start</button>
+                </div>
+                <div id="player"></div>
+                <div id="question1">
+                    <div id="quiz"></div>
+                    <button id="submit">Valider la réponse</button>
+                    <div id="results"></div>
+                </div>
+                <div id="question2">
+                    <div id="quiz2"></div>
+                    <button id="submit2">Valider la réponse</button>
+                    <div id="results2"></div>
+                </div>
+            </div>
+            <div id="controls">
+                <h1>Information importante!</h1>
+                <p>Un système de questionnaire est en place sur la vidéo.<br>
+                <br>
+                De ce faite si vous devez mettre en pause la vidéo utiliser le bouton sur la droite afin de suspendre le timer, et avoir vu tout les éléments nécéssaire pour répondre aux questions.<br>
+                <br>
+                Assurez-vous que le timer sous la vidéo soit le plus synchronisé avec le temps de la vidéo.<br>
+                Si ce n'est pas le cas suspendez la vidéo avec le bouton pause puis lancez la manuellement jusqu'à rattraper le compteur pui cliquer sur le bouton play.</p>
+                <button onclick="play()">Play</button>
+                <button onclick="pause()">Pause</button>
+            </div>
+        </div>
+        <br>
+        <div id="timer"></div>
+
+        <script src="js/main.js"></script>
+        <script src="js/question1.js"></script>
+        <script src="js/question2.js"></script>
+    </body>
+    </html>

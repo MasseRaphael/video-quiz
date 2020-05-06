@@ -1,0 +1,52 @@
+#interface{
+    position: relative;
+    height: 720px;
+    text-align: center;
+}
+
+#questionPlayer{
+    position: relative;
+}
+
+#player{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#initiate{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 720px;
+    width: 1280px;
+    background: rgba( 255, 255, 255 , 0.8);
+    z-index: 2;
+}
+
+#question1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    height: 720px;
+    width: 1280px;
+    background: rgba( 255, 255, 255 , 0.8);
+}
+
+#question2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    height: 720px;
+    width: 1280px;
+    background: rgba( 255, 255, 255 , 0.8);
+}
+
+#controls{
+    position: absolute;
+    top: 0px;
+    left: 1300px;
+}
