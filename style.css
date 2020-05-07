@@ -1,3 +1,17 @@
+.btn-start{
+    margin: 339px;
+    font-size: 30px;
+}
+
+.centrage{
+    margin: 310px;
+    font-size: 30px;
+}
+
+.next{
+    font-size: 20px;
+}
+
 #interface{
     position: relative;
     height: 720px;
@@ -49,4 +63,8 @@
     position: absolute;
     top: 0px;
     left: 1300px;
+}
+
+#submit{
+    font-size: 20px;
 }
