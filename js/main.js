@@ -88,7 +88,7 @@ var player;
         minutes = parseInt((temps % 3600) / 60);
         secondes = temps % 60;
         var div = document.getElementById("timer");
-        var texte = document.createTextNode(minutes + " : " +  secondes + " temps : " + temps);
+        var texte = document.createTextNode(minutes + " : " +  secondes /*+ " temps : " + temps*/);
 
         if (div.firstChild != null){
             div.removeChild(div.firstChild);
