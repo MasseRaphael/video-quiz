@@ -11,7 +11,7 @@ var player;
         player = new YT.Player('player', {
             height: '720',
             width: '1280',
-            videoId: 'HHXHm-Oofos',
+            videoId: '13odR-0PM1o',
             /*playerVars: {
                 controls: 0,
             },*/
@@ -57,7 +57,8 @@ var player;
     //met en pause la vidéo et suspend le compteur
     function pause () {
 
-        player.pauseVideo();
+        player.stopVideo();
+        player.getCurrentTime();
         pauseCompteur();
     
     }
