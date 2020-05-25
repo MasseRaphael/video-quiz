@@ -67,7 +67,7 @@ var player;
     function lancerCompteur(tempsInitial){
         temps = tempsInitial
         actualiserCompteur();
-        compteur = setInterval("actualiserCompteur()",1000);
+        compteur = setInterval("actualiserCompteur()",1);
         check();
         checking = setInterval("check()",1000);
     }
@@ -80,6 +80,7 @@ var player;
 
     //fonction qui affiche le compteur
     function actualiserCompteur(){
+        temps = player.getCurrentTime(); 
         if (temps <= 0){
             clearInterval(compteur);
             clearInterval(checking);
@@ -89,12 +90,12 @@ var player;
         minutes = parseInt((temps % 3600) / 60);
         secondes = temps % 60;
         var div = document.getElementById("timer");
-        var texte = document.createTextNode(minutes + " : " +  secondes /*+ " temps : " + temps*/);
+        var texte = document.createTextNode(minutes + " : " +  secondes + " temps : " + temps);
 
         if (div.firstChild != null){
             div.removeChild(div.firstChild);
         }div.appendChild(texte);
-        temps ++; 
+        
     }
     
     //fonction qui met en pause la vidéo et le compteur et met en avant la question
