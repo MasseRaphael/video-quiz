@@ -28,6 +28,7 @@ var player;
     var temps = 0;
     var compteur;
     var checking;
+    var test;
     var init = document.getElementById("initiate");
     var played = document.getElementById("player");
     var quest = document.getElementById("question1");
@@ -37,8 +38,9 @@ var player;
     function start () {
 
         player.playVideo();
+        test = player.getCurrentTime();
 
-        lancerCompteur(0);
+        lancerCompteur(test);
 
         init.style.zIndex= 0;
         quest.style.zIndex= 0;
@@ -57,10 +59,8 @@ var player;
     //met en pause la vidéo et suspend le compteur
     function pause () {
 
-        player.stopVideo();
-        player.getCurrentTime();
-        pauseCompteur();
-    
+        player.pauseVideo();
+        pauseCompteur();     
     }
     
     //fonction qui lance le compteur
