@@ -55,14 +55,7 @@ var player;
         lancerCompteur(temps);
         
     }
-
-    //met en pause la vidéo et suspend le compteur
-    function pause () {
-
-        player.pauseVideo();
-        pauseCompteur();    
-    }
-    
+   
     //fonction qui lance le compteur
     function lancerCompteur(tempsInitial){
         temps = tempsInitial
