@@ -23,6 +23,7 @@ var player;
 
     function onPlayerReady(event) {
         event.target.playVideo();
+        event.target.stopVideo();
     }
 
     var temps = 0;
@@ -39,7 +40,6 @@ var player;
 
         player.playVideo();
         test = player.getCurrentTime();
-
         lancerCompteur(test);
 
         init.style.zIndex= 0;
@@ -60,7 +60,7 @@ var player;
     function pause () {
 
         player.pauseVideo();
-        pauseCompteur();     
+        pauseCompteur();    
     }
     
     //fonction qui lance le compteur
@@ -80,7 +80,7 @@ var player;
 
     //fonction qui affiche le compteur
     function actualiserCompteur(){
-        temps = player.getCurrentTime(); 
+        temps = Math.trunc(player.getCurrentTime()); 
         if (temps <= 0){
             clearInterval(compteur);
             clearInterval(checking);
@@ -95,11 +95,12 @@ var player;
         if (div.firstChild != null){
             div.removeChild(div.firstChild);
         }div.appendChild(texte);
-        
+        return temps;
     }
     
     //fonction qui met en pause la vidéo et le compteur et met en avant la question
     function check() {
+        
         if(temps === 6){
             
             player.pauseVideo();
@@ -120,11 +121,14 @@ var player;
     }
     //fonction qui reprend la vidéo après la question
     function next() {
+        
+        player.playVideo();
+        lancerCompteur(temps);
 
-      player.playVideo();
-      lancerCompteur(temps);
-
-      played.style.zIndex= 1;
-      quest.style.zIndex= 0;
-      quest2.style.zIndex= 0;
+        played.style.zIndex= 1;
+        quest.style.zIndex= 0;
+        quest2.style.zIndex= 0;
     }
+
+    //test utilisation getCurrentTime
+    
