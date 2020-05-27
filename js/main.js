@@ -76,7 +76,7 @@ var player;
     //fonction qui affiche le compteur
     function actualiserCompteur(){
         temps = Math.trunc(player.getCurrentTime()); 
-        if (temps <= 0){
+        if (temps < 0){
             clearInterval(compteur);
             clearInterval(checking);
         }
