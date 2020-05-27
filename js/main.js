@@ -38,20 +38,23 @@ var player;
     function start () {
 
         player.playVideo();
-        test = player.getCurrentTime();
+        
         lancerCompteur(0);
 
         init.style.zIndex= 0;
         quest.style.zIndex= 0;
-        played.style.zIndex= 1;
+        played.style.zIndex= 0;
         
     }
 
     //reprend la vidéo et reprend le compteur
     function play () {
 
-        player.playVideo();
         lancerCompteur(temps);
+
+        init.style.zIndex= 0;
+        quest.style.zIndex= 0;
+        played.style.zIndex= 1;
         
     }
    
