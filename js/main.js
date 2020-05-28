@@ -88,7 +88,7 @@ var player;
     //fonction qui met en pause la vidéo et le compteur et met en avant la question
     function check() {
         
-        if(temps === 200){
+        if(temps === 198){
             
             player.pauseVideo();
             pauseCompteur();
