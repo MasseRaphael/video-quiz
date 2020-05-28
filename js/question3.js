@@ -64,12 +64,29 @@
     const submitButton = document.getElementById('submit3');
     const myQuestions = [
       {
-        question: "Henry VI est un des rois fondateurs mais de quoi ?",
+        question: "Information nécessaire sur le CV :",
         answers: {
-          a: "De L'Art de la Guerre",
-          b: "Du roman Nationnal"
+          a: "Nom Prénom bien lisible / date de naissance plutôt que age mais non obligatoire / adresse E-mail professionnel",
+          b: "Nom Prénom bien lisible / Pseudo / adresse E-mail"
         },
-        correctAnswer: "b"
+        correctAnswer: "a"
+      },
+      {
+        question: "Format de fichier recommander :",
+        answers: {
+          a: "MonCV.pdf et un poids de 1 Mo",
+          b: "JeanConstantStagiaireResponsableMarketing.pdf et le poids du fichier importe peu",
+          c: "JeanConstantStagiaireResponsableMarketing.pdf et moins de 2 Mo"
+        },
+        correctAnswer: "c"
+      },
+      {
+        question: "quels sont les 3 points à retenir ?",
+        answers: {
+          a: "Mise en avant des compétences / Clarté de la mise en page / Pertinence des mots clés de l'offre",
+          b: "Mise en avant des expériences / Belle mise en page / Des mots clés"
+        },
+        correctAnswer: "a"
       }
     ];
   

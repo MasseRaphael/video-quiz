@@ -104,7 +104,7 @@ var player;
           played.style.zIndex= 0;
           quest2.style.zIndex= 1;
         }
-        if(temps === 727){
+        if(temps === 725){
 
             player.pauseVideo();
             pauseCompteur();
@@ -122,6 +122,7 @@ var player;
         played.style.zIndex= 1;
         quest.style.zIndex= 0;
         quest2.style.zIndex= 0;
+        quest3.style.zIndex= 0;
     }
     
     //fonction timer pour quitter la question
