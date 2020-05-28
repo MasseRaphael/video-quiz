@@ -46,17 +46,6 @@ var player;
         played.style.zIndex= 0;
         
     }
-
-    //reprend la vidéo et reprend le compteur
-    function play () {
-
-        lancerCompteur(temps);
-
-        init.style.zIndex= 0;
-        quest.style.zIndex= 0;
-        played.style.zIndex= 1;
-        
-    }
    
     //fonction qui lance le compteur
     function lancerCompteur(tempsInitial){
@@ -124,6 +113,4 @@ var player;
         quest.style.zIndex= 0;
         quest2.style.zIndex= 0;
     }
-
-    //test utilisation getCurrentTime
     
