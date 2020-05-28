@@ -29,6 +29,8 @@ var player;
     var temps = 0;
     var compteur;
     var checking;
+    var tempo = 0;
+    var timerSec;
     var init = document.getElementById("initiate");
     var played = document.getElementById("player");
     var quest = document.getElementById("question1");
@@ -51,9 +53,9 @@ var player;
     function lancerCompteur(tempsInitial){
         temps = tempsInitial
         actualiserCompteur();
-        compteur = setInterval("actualiserCompteur()",1);
+        compteur = setInterval("actualiserCompteur()", 1);
         check();
-        checking = setInterval("check()",1000);
+        checking = setInterval("check()", 1000);
     }
 
     //fonction qui met en pause le compteur
@@ -107,10 +109,26 @@ var player;
     function next() {
         
         player.playVideo();
-        lancerCompteur(temps);
+        intQuitQuest(0);
 
         played.style.zIndex= 1;
         quest.style.zIndex= 0;
         quest2.style.zIndex= 0;
     }
     
+    //fonction timer pour quitter la question
+    function intQuitQuest(tempoInitial){
+        tempo = tempoInitial;
+        quitQuest();
+        timerSec = setInterval('quitQuest()', 1000);
+    }
+    
+    //fonction pour quitter la question
+    function quitQuest() {
+        if (tempo === 1){
+
+            lancerCompteur(temps);
+            clearInterval(timerSec);
+        }
+        tempo++;
+    }
