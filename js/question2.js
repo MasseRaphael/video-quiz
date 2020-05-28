@@ -24,7 +24,7 @@
   
           output.push(
             `<div class="question"> ${currentQuestion.question} </div>
-            <div class="answers"> ${answers.join('')} </div>`
+            <div class="answers"> ${answers.join('')} </div><br>`
           );
         }
       );
@@ -64,12 +64,28 @@
     const submitButton = document.getElementById('submit2');
     const myQuestions = [
       {
-        question: "Henry VI est un des rois fondateurs mais de quoi ?",
+        question: "Doit-on intégré les projets d'école ?",
         answers: {
-          a: "De L'Art de la Guerre",
-          b: "Du roman Nationnal"
+          a: "Non ils ne seront pas pris au sérieux",
+          b: "Oui ce sont des projets professionnalisants"
         },
         correctAnswer: "b"
+      },
+      {
+        question: 'Le CV doit-il contenir les "SoftSkills" ?',
+        answers: {
+          a: "Non ils seront vus lors de l'entretien",
+          b: "Oui",
+          c: "Il est plutôt conseillé de les mettre en avant dans la lettre de motivation"
+        },
+        correctAnswer: "c"
+      },{
+        question: "Qu'offrent les centre d'intérêt ?",
+        answers: {
+          a: "Ils offrent un aperçu de votre personnalité",
+          b: "Ils offrent des possibilités discrimination",
+        },
+        correctAnswer: "a"
       }
     ];
   
