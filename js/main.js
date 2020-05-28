@@ -35,6 +35,7 @@ var player;
     var played = document.getElementById("player");
     var quest = document.getElementById("question1");
     var quest2 = document.getElementById("question2");
+    var quest3 = document.getElementById("question3");
 
     //démarre la vidéo, initialise le compteur et met en avant le lecteur
     function start () {
@@ -45,7 +46,7 @@ var player;
 
         init.style.zIndex= 0;
         quest.style.zIndex= 0;
-        played.style.zIndex= 0;
+        played.style.zIndex= 1;
         
     }
    
@@ -87,7 +88,7 @@ var player;
     //fonction qui met en pause la vidéo et le compteur et met en avant la question
     function check() {
         
-        if(temps === 6){
+        if(temps === 200){
             
             player.pauseVideo();
             pauseCompteur();
@@ -95,15 +96,22 @@ var player;
             played.style.zIndex= 0;
             quest.style.zIndex= 1;
         }
-        if(temps === 78){
+        if(temps === 520){
 
           player.pauseVideo();
           pauseCompteur();
 
           played.style.zIndex= 0;
-          quest.style.zIndex= 0;
           quest2.style.zIndex= 1;
         }
+        if(temps === 727){
+
+            player.pauseVideo();
+            pauseCompteur();
+  
+            played.style.zIndex= 0;
+            quest3.style.zIndex= 1;
+          }
     }
     //fonction qui reprend la vidéo après la question
     function next() {

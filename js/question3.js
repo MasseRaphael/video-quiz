@@ -59,35 +59,18 @@
       resultsContainer.innerHTML = `<button class="next" onclick="next()">Reprendre la vidéo</button>`;
     }
   
-    const quizContainer = document.getElementById('quiz');
-    const resultsContainer = document.getElementById('results');
-    const submitButton = document.getElementById('submit');
+    const quizContainer = document.getElementById('quiz3');
+    const resultsContainer = document.getElementById('results3');
+    const submitButton = document.getElementById('submit3');
     const myQuestions = [
       {
-        question: "Combien de temps un recruteur passe-t-il de temps sur un CV ?",
+        question: "Henry VI est un des rois fondateurs mais de quoi ?",
         answers: {
-          a: "20 secondes",
-          b: "5 secondes",
-          c: "40 secondes"
-        },
-        correctAnswer: "a"
-      },
-      {
-        question: "Pour personnaliser votre CV en fonction de votre poste vous pouvez faire :",
-        answers: {
-          a: "Un CV Graphique pour un communicant / Un CV avec des mots clés pour un développeur / Un CV structure + version HTML pour un designer",
-          b: "Un CV Graphique pour un designer / Un CV avec des mots clés pour un communicant / Un CV structure + version HTML pour un développeur"
+          a: "De L'Art de la Guerre",
+          b: "Du roman Nationnal"
         },
         correctAnswer: "b"
-      },
-      {
-        question: "Le CV doit contenir :",
-        answers: {
-          a: "Vos études et diplômes / Votre expérience professionnel / Vos compétences",
-          b: "Votre recherche / Vos études et diplômes / Votre expérience professionnel / Vos compétences / Vos centres d'intérêts"
-        },
-        correctAnswer: "b"
-      },
+      }
     ];
   
     buildQuiz();
