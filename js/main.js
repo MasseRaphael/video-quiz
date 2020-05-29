@@ -159,7 +159,24 @@ var player;
     //timer de fin de chapitre
     function timerChapter() {
         chapterTime = Math.trunc(player.getCurrentTime());
-        
     }
 
     //fonction arrêtant le chapitre
+    function stopChapter(){
+        if (chapterTime === 70){
+            player.stopVideo();
+            clearInterval(chapterInterval);
+        }
+        if (chapterTime === 222){
+            player.stopVideo();
+            clearInterval(chapterInterval);
+        }
+        if (chapterTime === 519){
+            player.stopVideo();
+            clearInterval(chapterInterval);
+        }
+        if (chapterTime === 730){
+            player.stopVideo();
+            clearInterval(chapterInterval);
+        } 
+    }
