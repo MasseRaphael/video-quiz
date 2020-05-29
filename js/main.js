@@ -148,12 +148,15 @@ var player;
     //fonctions de chapitrage
     var chapterTime = 0;
     var chapterInterval;
+    var stopingChapter;
 
     //fonction d'initialisation du timer de fin de chapitre
     function endChapter(chapterTimeInitial) {
         chapterTime = chapterTimeInitial;
         timerChapter();
         chapterInterval = setInterval('timerChapter()', 1);
+        stopChapter();
+        stopingChapter = setInterval('stopChapter()', 1000);
     }
 
     //timer de fin de chapitre
@@ -180,3 +183,11 @@ var player;
             clearInterval(chapterInterval);
         } 
     }
+
+    //fonction pour aller à l'intro
+    function intro(){
+        player.seekTo(1, true);
+        endChapter();
+    }
+
+    
