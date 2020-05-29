@@ -190,4 +190,20 @@ var player;
         endChapter();
     }
 
-    
+    //fonction pour aller au chapitre 1
+    function chap1(){
+        player.seekTo(71, true);
+        endChapter();
+    }
+
+    //fonction pour aller au chapitre 2
+    function chap2(){
+        player.seekTo(223, true);
+        endChapter();
+    }
+
+    //fonction pour aller au chapitre 3
+    function chap3(){
+        player.seekTo(520, true);
+        endChapter();
+    }
