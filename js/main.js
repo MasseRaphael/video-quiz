@@ -42,7 +42,7 @@ var player;
 
         player.playVideo();
         
-        lancerCompteur(0);
+        lancerCompteur(temps);
 
         init.style.zIndex= 0;
         quest.style.zIndex= 0;
@@ -68,10 +68,7 @@ var player;
     //fonction qui affiche le compteur
     function actualiserCompteur(){
         temps = Math.trunc(player.getCurrentTime()); 
-        if (temps < 0){
-            clearInterval(compteur);
-            clearInterval(checking);
-        }
+       
         var minutes = 0;
         var secondes = 0;
         minutes = parseInt((temps % 3600) / 60);
@@ -147,3 +144,22 @@ var player;
         }
         tempo++;
     }
+
+    //fonctions de chapitrage
+    var chapterTime = 0;
+    var chapterInterval;
+
+    //fonction d'initialisation du timer de fin de chapitre
+    function endChapter(chapterTimeInitial) {
+        chapterTime = chapterTimeInitial;
+        timerChapter();
+        chapterInterval = setInterval('timerChapter()', 1);
+    }
+
+    //timer de fin de chapitre
+    function timerChapter() {
+        chapterTime = Math.trunc(player.getCurrentTime());
+        
+    }
+
+    //fonction arrêtant le chapitre
