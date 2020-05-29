@@ -36,6 +36,7 @@ var player;
     var quest = document.getElementById("question1");
     var quest2 = document.getElementById("question2");
     var quest3 = document.getElementById("question3");
+    var chapters = document.getElementById('chapters');
 
     //démarre la vidéo, initialise le compteur et met en avant le lecteur
     function start () {
@@ -113,7 +114,7 @@ var player;
 
             player.stopVideo();
             pauseCompteur();
-            
+            chapters.style.visibility = "visible";
           }
     }
     //fonction qui reprend la vidéo après la question

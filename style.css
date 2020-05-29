@@ -85,3 +85,7 @@
 #submit{
     font-size: 30px;
 }
+
+#chapters{
+    visibility: hidden;
+}
