@@ -112,6 +112,12 @@ var player;
             played.style.zIndex= 0;
             quest3.style.zIndex= 1;
           }
+          if(temps === 730){
+
+            player.stopVideo();
+            pauseCompteur();
+            
+          }
     }
     //fonction qui reprend la vidéo après la question
     function next() {
