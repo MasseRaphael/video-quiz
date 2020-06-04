@@ -6,15 +6,14 @@ var tag = document.createElement('script');
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 //fonction qui gère l'iframe
+var playerH = '720';
+var playerW = '1280';
 var player;
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-            height: '720',
-            width: '1280',
+            height: playerH,
+            width: playerW,
             videoId: '13odR-0PM1o',
-            /*playerVars: {
-                controls: 0,
-            },*/
             events: {
                 'onReady': onPlayerReady,
             }
