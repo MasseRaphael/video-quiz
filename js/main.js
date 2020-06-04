@@ -9,7 +9,12 @@ var tag = document.createElement('script');
 var playerH = '720';
 var playerW = '1280';
 var player;
+var widthWindow = window.innerWidth;
     function onYouTubeIframeAPIReady() {
+        if (widthWindow < 1280){
+            playerH = '360';
+            playerW = '640';
+        };
         player = new YT.Player('player', {
             height: playerH,
             width: playerW,
@@ -17,7 +22,7 @@ var player;
             events: {
                 'onReady': onPlayerReady,
             }
-        });
+        })
     }
 
     function onPlayerReady(event) {
