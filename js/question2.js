@@ -64,7 +64,7 @@
     const submitButton = document.getElementById('submit2');
     const myQuestions = [
       {
-        question: "Doit-on intégré les projets d'école ?",
+        question: "Doit-on intégrer les projets d'école ?",
         answers: {
           a: "Non ils ne seront pas pris au sérieux<br>",
           b: "Oui ce sont des projets professionnalisants"
