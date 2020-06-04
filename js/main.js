@@ -23,10 +23,6 @@ var widthWindow = window.innerWidth;
             playerH = '270';
             playerW = '480';
         }
-        if (widthWindow < 480){
-            playerH = '180';
-            playerW = '320';
-        }
         player = new YT.Player('player', {
             height: playerH,
             width: playerW,
