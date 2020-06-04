@@ -66,7 +66,7 @@
       {
         question: "Doit-on intégré les projets d'école ?",
         answers: {
-          a: "Non ils ne seront pas pris au sérieux",
+          a: "Non ils ne seront pas pris au sérieux<br>",
           b: "Oui ce sont des projets professionnalisants"
         },
         correctAnswer: "b"
@@ -74,15 +74,15 @@
       {
         question: 'Le CV doit-il contenir les "SoftSkills" ?',
         answers: {
-          a: "Non ils seront vus lors de l'entretien",
-          b: "Oui",
+          a: "Non ils seront vus lors de l'entretien<br>",
+          b: "Oui<br>",
           c: "Il est plutôt conseillé de les mettre en avant dans la lettre de motivation"
         },
         correctAnswer: "c"
       },{
         question: "Qu'offrent les centre d'intérêt ?",
         answers: {
-          a: "Ils offrent un aperçu de votre personnalité",
+          a: "Ils offrent un aperçu de votre personnalité<br>",
           b: "Ils offrent des possibilités discrimination",
         },
         correctAnswer: "a"

@@ -75,7 +75,7 @@
       {
         question: "Pour personnaliser votre CV en fonction de votre poste vous pouvez faire :",
         answers: {
-          a: "Un CV Graphique pour un communicant / Un CV avec des mots clés pour un développeur / Un CV structure + version HTML pour un designer",
+          a: "Un CV Graphique pour un communicant / Un CV avec des mots clés pour un développeur / Un CV structure + version HTML pour un designer<br>",
           b: "Un CV Graphique pour un designer / Un CV avec des mots clés pour un communicant / Un CV structure + version HTML pour un développeur"
         },
         correctAnswer: "b"
@@ -83,7 +83,7 @@
       {
         question: "Le CV doit contenir :",
         answers: {
-          a: "Vos études et diplômes / Votre expérience professionnel / Vos compétences",
+          a: "Vos études et diplômes / Votre expérience professionnel / Vos compétences<br>",
           b: "Votre recherche / Vos études et diplômes / Votre expérience professionnel / Vos compétences / Vos centres d'intérêts"
         },
         correctAnswer: "b"

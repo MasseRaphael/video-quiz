@@ -66,7 +66,7 @@
       {
         question: "Information nécessaire sur le CV :",
         answers: {
-          a: "Nom Prénom bien lisible / date de naissance plutôt que age mais non obligatoire / adresse E-mail professionnel",
+          a: "Nom Prénom bien lisible / date de naissance plutôt que age mais non obligatoire / adresse E-mail professionnel<br>",
           b: "Nom Prénom bien lisible / Pseudo / adresse E-mail"
         },
         correctAnswer: "a"
@@ -74,8 +74,8 @@
       {
         question: "Format de fichier recommander :",
         answers: {
-          a: "MonCV.pdf et un poids de 1 Mo",
-          b: "JeanConstantStagiaireResponsableMarketing.pdf et le poids du fichier importe peu",
+          a: "MonCV.pdf et un poids de 1 Mo<br>",
+          b: "JeanConstantStagiaireResponsableMarketing.pdf et le poids du fichier importe peu<br>",
           c: "JeanConstantStagiaireResponsableMarketing.pdf et moins de 2 Mo"
         },
         correctAnswer: "c"
@@ -83,7 +83,7 @@
       {
         question: "quels sont les 3 points à retenir ?",
         answers: {
-          a: "Mise en avant des compétences / Clarté de la mise en page / Pertinence des mots clés de l'offre",
+          a: "Mise en avant des compétences / Clarté de la mise en page / Pertinence des mots clés de l'offre<br>",
           b: "Mise en avant des expériences / Belle mise en page / Des mots clés"
         },
         correctAnswer: "a"
