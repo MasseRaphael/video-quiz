@@ -11,10 +11,22 @@ var playerW = '1280';
 var player;
 var widthWindow = window.innerWidth;
     function onYouTubeIframeAPIReady() {
-        if (widthWindow < 1280){
+        if (widthWindow < 1300){
+            playerH = '540';
+            playerW = '960';
+        }
+        if (widthWindow < 990){
             playerH = '360';
             playerW = '640';
-        };
+        }
+        if (widthWindow < 660){
+            playerH = '270';
+            playerW = '480';
+        }
+        if (widthWindow < 500){
+            playerH = '180';
+            playerW = '320';
+        }
         player = new YT.Player('player', {
             height: playerH,
             width: playerW,
