@@ -9,4 +9,4 @@
 
 ## Demo
 
-https://masseraphael.github.io/videoquiz/
+[GitHub pages](https://masseraphael.github.io/videoquiz/)
